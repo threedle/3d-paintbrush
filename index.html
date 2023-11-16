@@ -242,6 +242,9 @@
         </div>
         <div class="content has-text-justified">
           <p>
+            Each point on the surface of the mesh is passed into three different branches to produce a localization probability, texture map, and background map.
+            We texture three different variants of the same mesh with the localization, texture, and background maps and render them from the same viewpoint.
+            Each image along with the corresponding text condition is used to compute the CSD loss.
           </p>
         </div>
       </div>
