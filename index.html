@@ -287,6 +287,42 @@
     </div>
     <!--/ CSD Overview. -->
 
+    <!-- Gallery. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <hr class="divider" />
+        <h2 class="title is-3">Gallery</h2>
+        <div class="overview-image">
+          <img src="./static/images/figures/gallery.png" type="image/png">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+          3D Paintbrush produces highly detailed textures and localizations for a diverse range of meshes and prompts.
+          Our method synthesizes meaningful local edits on shapes, demonstrating both global and local part-level understanding.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Gallery. -->
+
+    <!-- Simultaneous -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <hr class="divider" />
+        <h2 class="title is-3">Impact of simultaneous optimization</h2>
+        <div class="overview-image">
+          <img src="./static/images/figures/simultaneous.png" type="image/png">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            Simultaneously optimizing the localization and texture (left) results in higher-detailed textures which effectively conform to the predicted localization.
+            If we first optimize the localization, then optimize the texture within the localization region (\textit{in series}, middle), both the localization and texture are less detailed.
+            Independent (right): if we optimize the localization independently (independent: left) and the texture independently (independent: middle), the texture does not align with the localization and thus the masked texture contains fringe artifacts (independent: right).
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Simultaneous. -->
 
   </div>
 </section>
