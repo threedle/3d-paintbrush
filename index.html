@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Localizing Regions on 3D Shapes via Text Descriptions.">
+        content="Local Stylization of 3D Shapes with Cascaded Score Distillation.">
   <meta name="keywords" content="3D Paintbrush: Local Stylization of 3D Shapes with Cascaded Score Distillation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>3D Paintbrush</title>
@@ -78,7 +78,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="placeholder"
+                <a href="https://arxiv.org/pdf/2311.09571.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -88,7 +88,7 @@
               </span>
               <!-- arXiv Link. -->
               <span class="link-block">
-                <a href="placeholder"
+                <a href="https://arxiv.org/abs/2311.09571"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -132,7 +132,7 @@
         <img src="./static/images/figures/teaser.png"
                 type="image/png">
       </image> -->
-      <video poster="" id="octopus-pink-sunglasses" autoplay muted loop playsinline height="100%">
+      <video poster="" id="teaser-video" autoplay muted loop playsinline height="100%">
         <source src="./static/videos/3d-paintbrush-teaser.mp4" type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
@@ -308,6 +308,43 @@
     </div>
     <!--/ Gallery. -->
 
+    <!-- Grid -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <hr class="divider" />
+        <h2 class="title is-3">Specificity and effectiveness</h2>
+        <div class="overview-image">
+          <img src="./static/images/figures/grid.png" type="image/png">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            3D Paintbrush is capable of producing a variety of local textures on the same mesh.
+            Each result contains an accurate localization map (to specify the edit region) and a texture map that conforms to it.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Grid. -->
+
+    <!-- CSD vs SDS. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <hr class="divider" />
+        <h2 class="title is-3">Importance of super-resolution stage in CSD</h2>
+        <div class="overview-image">
+          <img src="./static/images/figures/super-res-csd.png" type="image/png">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            Using stage 1 only (equivalent to SDS) lacks fine-grained details.
+            Incorporating the second super-resolution cascaded stage from our CSD increases the resolution and detail.
+            Input text prompts (from left to right): Colorful crochet shell, Cactus base, Tiger stripe shirt.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Gallery. -->
+
     <!-- Simultaneous -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -319,7 +356,7 @@
         <div class="content has-text-justified">
           <p>
             Simultaneously optimizing the localization and texture (left) results in higher-detailed textures which effectively conform to the predicted localization.
-            If we first optimize the localization, then optimize the texture within the localization region (\textit{in series}, middle), both the localization and texture are less detailed.
+            If we first optimize the localization, then optimize the texture within the localization region (<i>in series</i>, middle), both the localization and texture are less detailed.
             Independent (right): if we optimize the localization independently (independent: left) and the texture independently (independent: middle), the texture does not align with the localization and thus the masked texture contains fringe artifacts (independent: right).
           </p>
         </div>
