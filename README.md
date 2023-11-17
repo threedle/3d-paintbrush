@@ -6,7 +6,7 @@ If you find 3D Paintbrush useful for your work please cite:
 @article{decatur2023paintbrush
   author    = {Decatur, Dale and Lang, Itai and Aberman, Kfir and Hanocka, Rana},
   title     = {3D Paintbrush: Localizing Regions on 3D Shapes via Text Descriptions},
-  journal   = {ArXiv},
+  journal   = {arXiv preprint arXiv:2311.09571},
   year      = {2023},
 }
 ```

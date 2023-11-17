@@ -19,6 +19,7 @@
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <!-- <link rel="icon" href="./static/images/favicon.ico"> -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -272,24 +273,6 @@
     </div>
     <!--/ Overview. -->
 
-    <!-- CSD Overview. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <hr class="divider" />
-        <h2 class="title is-3">Cascaded Score Distillation (CSD)</h2>
-        <div class="overview-image">
-          <img src="./static/images/figures/csd_overview.png" type="image/png">
-        </div>
-        <div class="content has-text-justified">
-          <p>
-            We distill scores across multiple stages of a cascaded diffusion model simultaneously in order to leverage both the global awareness of the first stage and the higher level of detail contained in later stages.
-            The difference between the predicted noise and sampled noise is the image gradient for each stage.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ CSD Overview. -->
-
     <!-- Gallery. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -307,6 +290,24 @@
       </div>
     </div>
     <!--/ Gallery. -->
+
+    <!-- CSD Overview. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <hr class="divider" />
+        <h2 class="title is-3">Cascaded Score Distillation (CSD)</h2>
+        <div class="overview-image">
+          <img src="./static/images/figures/csd_overview.png" type="image/png">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            We distill scores across multiple stages of a cascaded diffusion model simultaneously in order to leverage both the global awareness of the first stage and the higher level of detail contained in later stages.
+            The difference between the predicted noise and sampled noise is the image gradient for each stage.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ CSD Overview. -->
 
     <!-- Grid -->
     <div class="columns is-centered has-text-centered">
@@ -343,9 +344,48 @@
         </div>
       </div>
     </div>
-    <!--/ Gallery. -->
+    <!--/ CSD vs SDS. -->
 
-    <!-- Simultaneous -->
+    <!-- Impact of CSD. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <hr class="divider" />
+        <h2 class="title is-3">Impact of cascaded stages</h2>
+        <div class="overview-image">
+          <img src="./static/images/figures/csd_ablation.png" type="image/png">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            Different stages of the cascaded model provide different levels of granularity and global understanding.
+            Using only the (low resolution) stage 1 model gives a low-resolution result in roughly the correct location.
+            While the (high resolution) stage 2 model gives a high-resolution result, it is placed in the incorrect location.
+            Our CSD simultaneously uses stage 1 and 2, resulting in a high-detailed texture in the appropriate location.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Impact of CSD. -->
+    
+    <!-- CSD control. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <hr class="divider" />
+        <h2 class="title is-3">Granular control with CSD</h2>
+        <div class="overview-image">
+          <img src="./static/images/figures/granular-csd.png" type="image/png">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            Varying the weight between stage 1 and stage 2 results in control over the details and corresponding localization.
+            Only using stage 1 (leftmost) is rather coarse; only using stage 2 (rightmost) is highly detailed with an incorrect localization.
+            Increasing the stage 2 weight (moving left to right) progressively increases the detail and granularity of the supervision, enabling smooth and meaningful interpolation between stage 1 and 2.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ CSD control. -->
+
+    <!-- Simultaneous. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <hr class="divider" />
@@ -373,7 +413,7 @@
     <pre><code>@article{decatur2023paintbrush,
   author    = {Decatur, Dale and Lang, Itai and Aberman, Kfir and Hanocka, Rana},
   title     = {3D Paintbrush: Local Stylization of 3D Shapes with Cascaded Score Distillation},
-  journal   = {ArXiv},
+  journal   = {arXiv preprint arXiv:2311.09571},
   year      = {2023},
 }</code></pre>
   </div>
