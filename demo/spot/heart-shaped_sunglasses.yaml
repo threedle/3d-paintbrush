@@ -1,0 +1,14 @@
+log:
+  exp_dir: 'results/spot/heart-shaped_sunglasses'
+mesh:
+  path: ./data/spot.obj
+guidance:
+  object_name: 'cow'
+  style: 'high resolution DSLR' # gets replaced with 'yellow' for y_l and y_b
+  edit: 'heart-shaped sunglasses'
+  prefix: ''
+render:
+  init_azim: -90
+  inference_azim: 0
+optim:
+  seed: 14
