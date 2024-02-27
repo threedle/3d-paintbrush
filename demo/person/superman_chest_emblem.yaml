@@ -1,0 +1,12 @@
+log:
+  exp_dir: 'results/person/superman_chest_emblem'
+  inference_threshold: 0.95
+mesh:
+  path: ./data/person.obj
+guidance:
+  object_name: 'person'
+  style: 'superman' # gets replaced with 'yellow' for y_l and y_b
+  edit: 'chest emblem'
+  prefix: 'a'
+optim:
+  seed: 1

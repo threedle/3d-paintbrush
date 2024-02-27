@@ -1,0 +1,13 @@
+log:
+  exp_dir: 'results/lego_minifig/blue_denim_overalls'
+mesh:
+  path: ./data/lego_minifig.obj
+guidance:
+  object_name: 'lego minifigure'
+  style: 'blue denim' # gets replaced with 'yellow' for y_l and y_b
+  edit: 'overalls'
+  prefix: ''
+render:
+  init_azim: 90
+optim:
+  seed: 1

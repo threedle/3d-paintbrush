@@ -1,0 +1,15 @@
+log:
+  exp_dir: 'results/spot/gold_chain_necklace'
+mesh:
+  path: ./data/spot.obj
+guidance:
+  object_name: 'cow'
+  style: 'gold' # gets replaced with 'yellow' for y_l and y_b
+  edit: 'chain link necklace'
+  prefix: 'a'
+render:
+  init_azim: -90
+network:
+  clamp: 'clamp'
+optim:
+  seed: 0

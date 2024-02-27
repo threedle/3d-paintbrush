@@ -1,0 +1,14 @@
+log:
+  exp_dir: 'results/lego_minifig/red_bow_tie'
+  inference_threshold: 0.8
+mesh:
+  path: ./data/lego_minifig.obj
+guidance:
+  object_name: 'lego minifigure'
+  style: 'red' # gets replaced with 'yellow' for y_l and y_b
+  edit: 'bow tie'
+  prefix: 'a'
+render:
+  init_azim: 90
+optim:
+  seed: 0

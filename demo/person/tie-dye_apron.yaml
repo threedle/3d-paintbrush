@@ -1,0 +1,11 @@
+log:
+  exp_dir: 'results/person/tie-dye_apron'
+mesh:
+  path: ./data/person.obj
+guidance:
+  object_name: 'person'
+  style: 'tie-dye' # gets replaced with 'yellow' for y_l and y_b
+  edit: 'apron'
+  prefix: 'a'
+optim:
+  seed: 4

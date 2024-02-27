@@ -1,0 +1,9 @@
+results/
+slurm/
+.vscode/
+__pycache__/
+data/inverse_map_cache/
+data/trained_models/
+scratch/
+assets/
+getnode.sh

@@ -1,0 +1,16 @@
+log:
+  exp_dir: 'results/hand/fancy_gold_watch'
+  inference_threshold: 0.38
+mesh:
+  path: ./data/hand.obj
+guidance:
+  object_name: 'hand'
+  style: 'fancy gold' # gets replaced with 'yellow' for y_l and y_b
+  edit: 'watch'
+  prefix: 'a'
+render:
+  init_azim: -90
+  inference_azim: 0
+  inference_elev: 90
+optim:
+  seed: 0
