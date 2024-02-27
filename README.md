@@ -20,6 +20,9 @@ We demonstrate the effectiveness of 3D Paintbrush to locally texture a variety o
 
 ## CSD Demo Notebook
 To see a demo of the Cascaded Score Distillation (CSD) loss, check out this [notebook](src/csd_demo.ipynb) applying CSD to image generation and image editing. CSD enables us to supervise our optimization with multiple cascaded stages of the diffusion model instead of just the base stage used in standard SDS. We distill scores across multiple stages of a cascaded diffusion model simultaneously in order to leverage both the global awareness of the first stage and the higher level of detail contained in later stages.
+<p align="left">
+  <img src="https://github.com/threedle/3d-paintbrush/raw/site/static/images/figures/super-res-csd.png" width="500px"/>
+</p>
 
 ## Getting Started
 ### Requirements
