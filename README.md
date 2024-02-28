@@ -1,4 +1,4 @@
-# 🎨🖌️ 3D Paintbrush 
+# 🎨🖌️ 3D Paintbrush [CVPR 2024]
 
 *[Dale Decatur](https://ddecatur.github.io/), [Itai Lang](https://itailang.github.io/), [Kfir Aberman](https://kfiraberman.github.io/), [Rana Hanocka](https://people.cs.uchicago.edu/~ranahanocka/)*
 
