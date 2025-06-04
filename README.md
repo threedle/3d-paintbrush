@@ -24,6 +24,9 @@ To see a demo of the Cascaded Score Distillation (CSD) loss, check out this [not
   <img src="https://github.com/threedle/3d-paintbrush/raw/site/static/images/figures/super-res-csd.png" width="500px"/>
 </p>
 
+## Global Texturing with 3D Paintbrush
+Big thanks to @yuvalmiz for implementing a global texturing version of 3D Paintbrush using the CSD loss for high resolution global mesh textures! Check out their global 3D Paintbrush code here: https://github.com/yuvalmiz/3d-paintbrush-global?tab=readme-ov-file#run-globalized-painting
+
 ## Getting Started
 ### Requirements
 - 48 GB GPU
