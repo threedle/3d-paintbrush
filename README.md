@@ -181,10 +181,11 @@ Our codebase is based on [Latent-NeRF/Latent-Paint](https://github.com/eladrich/
 If you find this code helpful for your research, please cite our paper [3D Paintbrush: Local Stylization of 3D Shapes with Cascaded Score Distillation](https://arxiv.org/abs/2311.09571).
 
 ```
-@article{decatur2023paintbrush,
-    author = {Decatur, Dale and Lang, Itai and Aberman, Kfir and Hanocka, Rana},
-    title  = {3D Paintbrush: Local Stylization of 3D Shapes with Cascaded Score Distillation},
-    journal = {arXiv},
-    year = {2023}
+@inproceedings{decatur2024paintbrush,
+  title = {3D Paintbrush: Local Stylization of 3D Shapes with Cascaded Score Distillation},
+  author = {Decatur, Dale and Lang, Itai and Aberman, Kfir and Hanocka, Rana},
+  booktitle = {Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages = {4473--4483},
+  year = {2024}
 }
 ```
