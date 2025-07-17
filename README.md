@@ -3,11 +3,12 @@ This is the repository that contains source code for the [3D Paintbrush website]
 
 If you find 3D Paintbrush useful for your work please cite:
 ```
-@article{decatur2023paintbrush
+@inproceedings{decatur2024paintbrush,
+  title     = {3D Paintbrush: Local Stylization of 3D Shapes with Cascaded Score Distillation},
   author    = {Decatur, Dale and Lang, Itai and Aberman, Kfir and Hanocka, Rana},
-  title     = {3D Paintbrush: Localizing Regions on 3D Shapes via Text Descriptions},
-  journal   = {arXiv preprint arXiv:2311.09571},
-  year      = {2023},
+  booktitle = {Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages     = {4473--4483},
+  year      = {2024}
 }
 ```
 
